@@ -14,4 +14,14 @@ class StrategyPricerSpec extends Specification {
     then:"We expect total"
      150 == total
   }
+
+  void "should compute prices under 35"(){
+    given:"A list of prices"
+      def prices = [10, 20, 30, 40, 50]
+    when:"We compute total prices"
+      BigDecimal total = pricer.computeTotalUnder35(prices)
+    then:"We expect total"
+     60 == total
+  }
+
 }
