@@ -13,4 +13,13 @@ class ManagerSpec extends Specification {
       action == "working..."
   }
 
+  void "should analyze"(){
+    given:"A manager"
+      Manager manager = new Manager()
+    when:"We want to work"
+      String action = manager.analyze()
+    then:"We expect to work"
+      action == "analyzing..."
+  }
+
 }
