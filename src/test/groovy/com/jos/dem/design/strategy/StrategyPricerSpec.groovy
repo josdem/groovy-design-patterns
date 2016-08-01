@@ -10,7 +10,7 @@ class StrategyPricerSpec extends Specification {
     given:"A list of prices"
       def prices = [10, 20, 30, 40, 50]
     when:"We compute total prices"
-      BigDecimal total = pricer.computeTotal(prices)
+      BigDecimal total = pricer.computeTotal(prices, {true})
     then:"We expect total"
      150 == total
   }
@@ -19,7 +19,7 @@ class StrategyPricerSpec extends Specification {
     given:"A list of prices"
       def prices = [10, 20, 30, 40, 50]
     when:"We compute total prices"
-      BigDecimal total = pricer.computeTotalUnder35(prices)
+      BigDecimal total = pricer.computeTotal(prices, {it < 35})
     then:"We expect total"
      60 == total
   }
