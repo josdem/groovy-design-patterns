@@ -14,4 +14,13 @@ class AbstractFactorySpec extends Specification{
     assert book.pages == 250
   }
 
+  void "should create a CD instance"(){
+    when:"We need an book instance"
+      CompactDisc cd = abstractFactory.create(CompactDisc, [title: 'Tri-state', volume: 1])
+    then:"We expect results"
+    assert cd.title == 'Tri-state'
+    assert cd.volume == 1
+  }
+
+
 }
