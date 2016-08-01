@@ -1,8 +1,8 @@
-package com.jos.dem.design
+package com.jos.dem.design.factory
 
 import spock.lang.Specification
 
-class AbstractFactorySpec extends Specification{
+class AbstractFactorySpec extends Specification {
 
   AbstractFactory abstractFactory = new AbstractFactory()
 
@@ -21,6 +21,5 @@ class AbstractFactorySpec extends Specification{
     assert cd.title == 'Tri-state'
     assert cd.volume == 1
   }
-
 
 }

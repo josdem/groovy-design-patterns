@@ -1,4 +1,4 @@
-package com.jos.dem.design
+package com.jos.dem.design.factory
 
 class CompactDisc {
   String title
