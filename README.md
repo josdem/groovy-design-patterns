@@ -1,24 +1,19 @@
-Groovy Application project template
+Groovy Design Patterns
 ------------------------------------
 
-You have just created a basic Groovy application. There is a standard project
-structure for source code and tests.
+Design patterns represent solutions for popular problems in software design, they are a great way to make your code functional, readable, and extensible. 
 
-In this project you get:
+#### Content
 
-* A Gradle build file
-* A standard project structure:
+* Abstract Factory
+  * Abstract out the creation of an object from its implementations
+* Strategy
+  * Enables an algorithm behavior to be selected at runtime
+* Iterator pattern
+  * So common pattern when you are programming in Groovy
+* Delegation pattern
+  * Delegation is better than inheritance since minimize dependency
 
-```
-<proj>
-  |
-  +- src
-      |
-      +- main
-      |     |
-      |     +- groovy
-      |
-      +- test
-      |   |
-      |   +- groovy
-```
+#### Read this as reference
+
+* http://josdem.io/techtalk/groovy/design_patterns/
